@@ -1,0 +1,15 @@
+作业：
+C++ 标准库（容器 （ds), 迭代器(iter), 算法 (algo))
+
+迭代器的行为类似指针，指针容器内部元素的指针.
+
+erase(iterator) // 一般是容器自身实现的成员函数，用于删除 iter 指向的元素
+remove(value) //  删除容器中的这个值. .remove()
+
+std::vector<int> vints.
+
+------------------------
+
+[](int x) -> int { x + 1 }
+
+Python: map

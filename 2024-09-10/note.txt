@@ -1,0 +1,38 @@
+作业及课程回顾：
+应用层用得不是 HTTP， 需要自定义协议的时候，要用 TCP/UDP 来自定义应用层的协议。
+
+TCP：
+	1.socket() -> server_fd
+	2.填写地址信息，端口信息，bind
+	3.listen
+	4.accept -> client_socket
+	5.read
+	6.process
+	7.write
+
+UDP:
+	1.socket
+	2.填写地址信息
+	3.recvfrom
+	4.sendto
+
+--------------------------------------------------
+
+扫描枪 -> 扫到一张图片 -> 发送到业务中台 -> AIG() -> K8S -> DOCKER -> predict -> response (GPU集群)，(CPU)
+
+在我们 Linux 操作系统下面去构建一个 OpenCV 的开发环境（C++）
+
+Python (Conda, PIP)
+
+import cv2 as cv
+cv.__version__
+
+--------------------------------------------------
+
+三通道的彩色图，通过 OpenCV 加载 BGR, RGB -> (读取图片 BGR -> RGB)
+
+—-------------------------------------------------
+
+前期处理，都是为了输入的 Tensor 作准备。
+
+python -> resize -> normal -> Tensor数据

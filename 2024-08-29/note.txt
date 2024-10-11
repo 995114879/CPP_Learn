@@ -1,0 +1,63 @@
+作业:
+异常安全是比较重要。
+
+回顾一下昨天的课堂内容：
+std::bitset
+
+std::vector<bool>
+
+第 n 位的 flip, bs.flip <==>  ~(*this)[n]
+
+bs.flip()
+
+--------------------------------------------
+面向接口编程（面向抽象），而不是面向实现编程
+
+// interface, Java的 OOP比 C++ 更 pure
+
+struct Driveable {
+	virtual void drive() = 0;
+}
+
+struct airDriver : public Driveable {  
+
+}
+
+struct shipDriver : public Driveable {
+}
+
+struct carDriver : public Driveable {
+
+}
+
+struct tankDriver : public Driveable {
+	
+}
+
+struct Air {
+	drive();
+}
+
+struct ship {
+	drive();
+}
+
+struct car {
+	drive();
+}
+
+struct tank {
+}
+
+
+serai port 物理接口，driver.
+
+接口: 逻辑层面的，软件层面的
+
+三种继承方式：
+
+public, protected, private
+
+重用，重用是为了省时间，为什么省时间啊？被要求
+
+

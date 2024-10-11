@@ -1,0 +1,41 @@
+范型编程(C++, Java, C#)
+
+template <typename T>
+T add(T a, T b) { // 逻辑有重复   int add(int a, int b) {
+										return a + b;
+								}
+	return a + b;
+}
+}
+
+// 先用起来，实在不明白的地方，查。
+
+template <typename T, typename T1, typename T2>
+struct ClassName {
+	
+	T* p;
+}
+
+int main() {
+}
+
+-----------------------------------------------------------
+
+iterator
+
+int arr[10]; // C语言的作法
+
+std::array<int, 10> arr;
+
+std::vector<int> arr{};
+arr.push_back();
+
+
+-----------------------------------------------------------
+forward_list, 不比 list强大
+
+节省内存
+
+push(const T& e);
+T top();
+pop();

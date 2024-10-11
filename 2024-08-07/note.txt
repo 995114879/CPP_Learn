@@ -1,0 +1,111 @@
+作业：
+
+if (n == 0 || n == 1)  // base
+
+fib(n-1) + fib(n - 2)
+
+switch () {
+	// 				
+}
+
+dp[]
+
+-------------------------------
+一行代码来实现它，
+
+函数指针的一个典型应用：回调, 高阶函数在 C++的一个实现方式
+
+申请内存，堆上申请, 函数局部变量是在栈上。
+
+这里所谓的堆和栈与我们数据结构上的堆和栈有什么区别？
+
+堆是只一个名字相同。栈（FILO）， 栈不是程序中同维护的，它是由系统给我们分配和维护的，
+
+void test() {
+	int a;
+	int b;
+}
+
+
+new, delete 运算符
+
+我想让你向系统申请 4 个字节的内容，请使用 new来分配，你写一下这个语句
+
+char* p = new char[4];
+
+std::byte* p = new std::byte[4];
+
+delete p;
+
+-------------------------------------
+GC, JVM Z
+
+-------------------------------------
+
+int a[3]; // 3x4=12
+
+void fetch(int n = 4) {
+	char* p = new char[n];
+
+	int* pint = static_cast<int*>(p);
+	*pint = 
+
+	delete p;
+}
+
+fetch(4)
+
+int globalXXX[100000];
+
+---------------------------------------
+
+static int counter; // 只会初始化一次， x86 ISO C++
+
+unsigned long long int, 大数
+
+Python只受限你的内存，大数的处理逻辑，第三方库
+
+
+-------------------------------------------------
+顺序，分支，循环 就这三个吗？
+
+goto 跳的太随意，代码读起来非常困难 jump
+
+Python里面的[], 它的底层是优化过的
+
+数组，python序列的东西，
+
+struct Student {
+	xxx;	
+};
+
+Student students[100];
+
+*students       <=> students[0]
+*(students + 1) <=> students[1]
+*(stduents + 2) <=> students[2]
+
+int arr[]{1,2,3};
+
+
+数组名其实就是数组首元素的地址
+
+"hello" <=> ['h', 'e', 'l', 'l', 'o', '\0']
+
+
+Student s1;
+s1.doSomeThing()
+
+Stuedent& rs1 = s1;
+rs1.doSomeThing()
+rs1.doAnother
+
+int* ptr = nullptr;
+
+if (ptr != nullptr) {
+		
+}
+
+int arr[3]{1,2,3};
+
+int* p = arr;

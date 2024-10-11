@@ -1,0 +1,64 @@
+作业：
+
+数据 valid 验证，非常好， 有自己封装自己的valid_check的这个功能。任何的功能，边界
+
+月 1 - 12.
+
+[[nodiscard]] 
+
+enum {
+	unknown, //1978... const 
+}
+
+输出格式化 std::setw, table 显示
+
+一个纯static的类，很厉害，让我开了眼界， 大的工程里面（工具类 static)
+
+增加成员变量到时分秒的
+
+-----------------------------------
+
+static 成员变量，static 成员函数，this
+
+静态成员变量它的初始化，不是const 
+
+要在类外进行定义或者叫初始化(它属于类)
+
+main 函数是程序的入口，静态成员变量是先于程序运行初始化
+
+class Test{
+	
+};
+
+this: Test* const => this 
+
+Test t1; 
+
+------------------------------------
+
+Linux Kernel里面的代码是怎么做的，Linux Kernel主体是 C 语言，加少量的汇编程
+
+OOP
+
+struct Object {
+	int a;
+	int b;	
+	int (*action)(Object* this);
+};
+
+int add(Object* p) {
+	return p.a + p.b;
+}
+
+int sub(Object* p) {
+	return p.a - p.b;
+}
+
+Object addObject1{1, 2, add};
+Object addObject2{1, 2, sub};
+
+
+addObject1.add(&addObject1);
+addObject2.add(&addObject2);
+
+成员函数是类共享的。

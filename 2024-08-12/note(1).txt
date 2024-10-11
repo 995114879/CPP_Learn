@@ -1,0 +1,131 @@
+作业：
+
+数据 valid 验证，非常好， 有自己封装自己的valid_check的这个功能。任何的功能，边界
+
+月 1 - 12.
+
+[[nodiscard]] 
+
+enum {
+	unknown, //1978... const 
+}
+
+输出格式化 std::setw, table 显示
+
+一个纯static的类，很厉害，让我开了眼界， 大的工程里面（工具类 static)
+
+增加成员变量到时分秒的
+
+-----------------------------------
+
+static 成员变量，static 成员函数，this
+
+静态成员变量它的初始化，不是const 
+
+要在类外进行定义或者叫初始化(它属于类)
+
+main 函数是程序的入口，静态成员变量是先于程序运行初始化
+
+class Test{
+	
+};
+
+this: Test* const => this 
+
+Test t1; 
+
+------------------------------------
+
+Linux Kernel里面的代码是怎么做的，Linux Kernel主体是 C 语言，加少量的汇编程
+
+OOP
+
+struct Object {
+	int (*action)(Object* this); // 8
+};
+
+int add(Object* p) {
+	return p.a + p.b;
+}
+
+int sub(Object* p) {
+	return p.a - p.b;
+}
+
+Object addObject1{1, 2, add};
+Object addObject2{1, 2, sub};
+
+
+addObject1.add(&addObject1);
+addObject2.add(&addObject2);
+
+成员函数是类共享的。
+
+空类占 1 这个是编译器的一种选择，如果它不占任何内存，
+
+一定是一个字节，
+
+---------------------------------------------
+
+你是一个中国的公民，你肯定有各种证
+
+你有 id_card, drive_card, xueli_card, ....
+
+{
+	"name": "tom",
+	"birth_day": "",
+}
+
+id_card id{"tom", "1968-01-01"};
+drive_card drive{"tom", "1968-01-01"};
+xuelie_card xueid{"tom", "1968-01-01"};
+
+tom 不好，你想改改运气，"tom" -> "john", 没任何可复用的地方，遗漏，给错误的产生制造了非常大的可能
+
+
+class card_base {
+	std::string name;
+	const std::string birth_day;
+	void change_name(const std::string& new_name);
+};
+
+class id_card : public card_base {};
+class drive_card : public card_base {};
+class xuelie_card : public xueid {};
+
+id_card id{"tom", ""};
+
+id.change_name("john");
+
+为什么要引入继承 (现在大家心里都有感觉了)
+
+private < protected < public
+
+这三个用于表示访问限制的限制，在 c 语言里面是没有的，C 语言非常自由，
+它信任程序员做的所有操作，不作过多假设，C++它希望你根据规则来，条条框框
+
+总结一下：
+面向对象之前的语言就没有继承，世界一样转
+有了它是什么效果呢：程序员更轻松，复用（扩展，多态）在描述大工程的时候，心力更省。
+工具总是为了让人更轻松，如果说让人更沉重，一般都很难长久，比如JavaScript.
+
+
+---------------------------------------
+
+class的作者，class使用者，这两者是不同的角色
+
+class 的使用者， 基础类的维护一般都是行业特殊角度，pytorch。
+
+当你在设计类的时候，你会考虑很多东西，比如一个最直接
+
+birth_day 这个出生日期不可变，只要初始化之后不可变，const
+
+birth_day 编译器直接就告诉他这是一个非法的行为。
+
+"所以谓的自由就是大家都能够按照规则做事"
+
+------------------------------------------------------
+
+time, date, 从设计者的角度去思考，之后同志使用者角度去审视你自己的设计
+
+

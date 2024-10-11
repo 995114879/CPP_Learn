@@ -1,0 +1,56 @@
+作业:
+上节课我们重点讲解的是基于 HTTP 的应用层的通信案例。
+并没有使用一些成熟的开源的框架来做这个 HTTP 的 server，我们的核心是将同学领进门，背后的东西是什么。
+
+C++，Linux 操作系统调用粗略地实现了 GET 方式的解析和处理，POST 方法的解析和处理，重点强调处理二进制文件流的 POST。
+
+我们推理服务部署的时候，请求端发送到这个推理服务器的就是“以二进制流”的形式，这样的话性能最好。
+
+curl, get_client, post_client观看效果，客户端和服务器端交互的效果。
+
+HTTP的协议和应用，应用层协议。 自定义协议。
+-------------------------------------------------------------------------------------
+//开头行
+//头
+//空行
+<body>
+-------------------------------------------------------------------------------------
+
+基于 TCP/UDP 的自定义网络通信协议, （学习方法：死的知识，你自己看资料也能看明白。我来梳理一下，给大家引一个思路）。
+
+tiny http server 整体逻辑：
+socket:() -> 生成 server_fd: Socket
+bind() -> server_fd + address 信息 
+listen() -> server_fd
+accept() -> 接收客户端的连接 -> client_socket
+read(client_socket) -> buffer: []std::byte
+process(buffer) -> Reponse(返回信息)
+write(client_socket, Response)
+
+python flask api http server, client
+
+-------------------------------------------------------------------------------------
+
+自定义协议：
+struct TaskInfo {
+       int task_id;
+       char[5] task_param;
+}
+
+task_id: xxx,
+task_param: [xxx]
+
+struct TaskRsult {
+       int status; // 0 => success, -1 => failded
+       char[1024] messgae;
+}
+
+-------------------------------------------------------------------------------------
+现代 C++标准库中已经支持线程了，线程呢比进程更加轻量，线程的上下切换速度更快，进程比较重。
+std::thread.  linux -> pthread.
+              Windows -> CreateThread() 
+
+
+
+
+

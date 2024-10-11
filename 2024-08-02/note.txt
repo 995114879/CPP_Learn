@@ -1,0 +1,110 @@
+作业回顾：
+number % 3200 == 0 and number % 172800 == 0 
+
+函数定义，if, &&, ||
+
+--------------------------------------------
+面试的时候是什么样子
+工作的时候是什么样子
+
+if (4 && 100) // 
+
+if ()
+
+
+return (year % 4 == 0 && year % 100 != 0) ||   ; 2000 - 2003
+
+------------------------------
+struct 
+
+enum 
+
+union 
+------------------------------
+.h(C语言相同)
+.hpp(.cpp, .hpp)
+
+.hpp
+------------------------------
+int a = 2;
+int b = 3;
+
+int a = 2, b = 3;
+
+int a = b = 2;
+
+int b = 2;
+int a = b;
+------------------------------
+int ix = 1;
+double dx = (double)ix;
+double dx1 = static_cast<double>(ix);
+------------------------------
+
+int a = 1;
+a = a + 1; // a += 1;
+a = a - 1; // a -= 1; `+=`, `-=`, `*=`, `/=`, `%=`
+
+i++;
+++i;
+
+() ? 1 : 2
+
+面试的时候用比较好，写出来的代码更短
+
+for (int i = 0; i < 10; i++) {
+	if (i % 2 == 0) {
+		continue;
+	}
+	std::cout << i << std::endl;
+}
+
+if () {
+	if () {
+
+	} else {
+		if () {
+
+		}
+	}
+}
+
+for (i;;) {
+	for (j;;)		
+		for (k;;)
+}
+------------------------
+#define pi 3.1415
+
+
+double area_cirle(double radius) {
+	double area = pi * radius * radius; 
+}
+
+#define WINNT 1
+#define Linux 2
+#define MAC   3
+
+#ifdef WINNT
+xxxx
+#else
+yyyy
+#endif
+
+---------------------------------
+
+指针可以进行算术运算，引用不行
+
+C/C++ 面试考点，
+
+---------------------------------
+0 -> 9, A, B, C, D, E, F
+
+numpy, pandas
+
+---------------------------------
+数组在函数传参都会进行蜕化->指针，size
+
+a[0], a
+
+a[2][3] 

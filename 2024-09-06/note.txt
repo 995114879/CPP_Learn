@@ -1,0 +1,45 @@
+作业：
+
+学会使用 docker 这个容器环境
+
+docker images
+docker ps
+
+docker run images_name:tag
+docker run images_id
+
+----------------------------------------------
+
+dockerfile 构建自己的容器镜像
+
+docker build -t image_name .
+
+----------------------------------------------
+
+统一的虚拟机的环境，基于 VirtualBox。
+
+sudo apt-get install -y build-essential
+
+
+----------------------------------------------
+
+企业内部应用层的通信，目前的主体就是 http.
+
+C++ libcurl
+NodeJS
+Python
+
+______________________________________________
+
+http://www.baidu.com:8080/abc/def/xyz
+
+http://www.baidu.com:8080
+
+
+1. 自己先在网络上查找，没有思路
+2. 就向同学问，同学和你同时学，在思路上有可能碰撞出火花，有可能提示你灵感
+3. 一对一答疑群
+
+
+发现 N 多的问题，自己每周周末 2 天加班，来修那些问题。
+

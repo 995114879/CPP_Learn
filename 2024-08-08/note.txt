@@ -1,0 +1,44 @@
+作业：
+不仅仅有文字的回答，还有相应的代码的总结。
+
+--------------------------------------
+数组在作为函数参数进行传递的时候为退化为指向其首元素的指针，因此我们必须加上元素的数量作为其中一个参数，否则函数无法获得完整的数组的信息。
+
+C语言代码：malloc, free这两个都是函数，C 标准库提供的函数，
+new,delete 是 C++语言本身提供的运算符
+
+C语言非常原始
+
+int* p = new int;
+int* pp = new int[2];
+
+new int arr[5];
+
+指针未指向需要的地址前，先置空 `p = nullptr`
+
+你失去了对它的控制权，delete 不知道删除
+
+------------------------------------
+
+C++ 里面的 struct 和 C 里面的 struct 不是一回事。
+C++ 里面的 struct 可以放入成员函数，但是 C 里面的不行
+
+constructor     // 我只看英文原版的，不建议大家去看中文翻译的
+deconstructor
+
+你在类里面分配了内存，你要在析构函数里面释放，Python，Java，C#这些语言，它们三个都是由语言自己释放内存，程序员不用关心，你可以比较自然，任性地去编程，但是这些程序基本上不能用于高性能，高实时的场景，GC
+
+C#, unity它使用就C#
+
+Person person1;
+
+Person* person2 = new Person(,);
+
+const std::string& name  老师这个参数格式怎么理解
+
+void print(const std::string& name) {
+}
+
+std::string name{"abc"};
+
+print(name)

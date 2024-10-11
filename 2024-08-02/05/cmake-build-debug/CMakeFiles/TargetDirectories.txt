@@ -1,0 +1,3 @@
+/Users/lisprez/Documents/C++教学/2024-08-02/05/cmake-build-debug/CMakeFiles/05.dir
+/Users/lisprez/Documents/C++教学/2024-08-02/05/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/lisprez/Documents/C++教学/2024-08-02/05/cmake-build-debug/CMakeFiles/rebuild_cache.dir

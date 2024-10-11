@@ -1,0 +1,100 @@
+作业：
+9x9, 业务上，功能上实现的都没有问题。
+
+设计，二级数据初始化，嵌套二层 loop. 
+
+头文件的知识，拆分，main driver, 分离的文件中去实现。
+-------------------------------
+
+头文件，模块化编程，原始的封装多文件编程方法，module(不再操作原始的文件)
+
+运算符进行了一些总结，+=， -=， (KB), &&, 比较运算符
+
+指针的算术运算（数组一起进行讲解），decay, 网状的结构，线给拉起来，立体的结构。
+
+-------------------------------
+
+7bit, 128字符，英文的字符都包括，8，256，\r \n
+
+xxxx0xxx
+
+''
+
+"abc" 
+多大的内存空间？
+
+const char* s1 = "abc";
+不能直接 sizeof(s1)
+
+strlen
+
+const char* s1 = 
+
+for (; *s1; ++s1) {
+	
+}
+
+const char* s1 = "abc";  为啥没写成 s1 = &"abc" C++语法规定的
+
+int arr[2][3] = {{1,2,3}, {4, 5, 6}};
+
+int (*row_pointer)[3] // 一维数组指针
+int (*funcptr)(int, int)  = add; // 函数指针
+
+int *row_pointer[3]{p1, p2, p3}; // 指针数组
+
+void function1(int* p1, double* p2)
+
+void (*name)(int*, double*) = 
+
+void function2(type, ptr) { // A -> a', B -> b'
+}
+
+-------------------------
+函数名相同，参数不同
+
+sum(int, int);  // sum_int
+sum(int, int,int); // sum_int3
+sum(double, double); // 业务逻辑要实现的就是加法
+
+sum(1,2);
+sum(1,2,3);
+sum(1.1, 2.2);
+
+工程化的体现，方便程序员，C 语言是不支持的
+
+-------------------------
+
+实例化对象，构造的时候有很多参数(差不多的值，这个), default value
+
+default value直接用，（1ms), 0.5
+
+interupt() // 1ms
+interupt(0.5) // 
+
+-------------------------------
+
+注册窗体类 winclass (默认参数)
+
+ 
+  /*inline*/ void greet() {
+ 	printf("hello world");
+ 	//while, for
+
+ }
+
+
+int main() {
+	//greet(); -> call 指令 有开销的
+	//printf("hello world"); // 具体是否展开，决定权在编译器, 
+}
+
+class Test {
+public:
+	void greet() {
+
+	}
+}
+
+const char* s1 = "abc";
+const char* s2 = "abc";
